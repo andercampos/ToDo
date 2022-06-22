@@ -1,0 +1,45 @@
+.container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.75rem;
+}
+
+.hidden {
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  transition: all 150ms;
+  box-shadow: 0 0 0 1.5px var(--blue);
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.checkbox svg {
+  visibility: hidden;
+}
+
+.checked {
+  background: var(--purple-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+}
+
+.checked svg {
+  visibility: visible;
+  color: var(--gray-100);
+}
